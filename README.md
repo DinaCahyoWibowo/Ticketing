@@ -140,49 +140,70 @@ Before running the project, make sure the environment has:
 
 1. Clone the repository:
 
+```
 git clone https://github.com/DinaCahyoWibowo/Ticketing
+```
 
 2. Enter the project directory:
 
+```
 cd ticketing
+```
 
 3. Install PHP dependencies:
 
+```
 composer install
+```
 
 4. Create environment configuration:
 
+```
 cp .env.example .env
-
+```
 
 5. Generate application key:
 
+```
 php artisan key:generate
+```
 
 6. Configure database in `.env`:
 
+```
 DB_CONNECTION=sqlite
 DB_DATABASE=/path/to/database.sqlite
+```
 
 7. Create SQLite database file:
 
+```
 touch database/database.sqlite
+```
 
 8. Run database migration:
 
+```
 php artisan migrate
+```
 
 9. Install frontend dependencies:
 
+```
 npm install
+```
 
 10. Build frontend assets:
 
+```
 npm run build
+```
 
 11. Start the application:
 
+```
 php artisan serve
+```
 
 The application can be accessed through:
 
